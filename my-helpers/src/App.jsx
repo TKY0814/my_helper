@@ -13,6 +13,10 @@ function ChatBot() {
       value: "option2",
       label: "人間関係に困っています",
     },
+    {
+      value: "option3",
+      label: "元気が出なくて困っています",
+    },
   ]);
 
   const handleClick = (event) => {
@@ -37,6 +41,16 @@ function ChatBot() {
       {
         value: "subOption4",
         label: "仲良くなりたい人がいる",
+      },]);
+    } else if (event.target.value === "option3") {
+      setOutput("なぜ元気が出ませんか？");
+      setOptions([{
+        value: "subOption5",
+        label: "精神的に不安です",
+      },
+      {
+        value: "subOption6",
+        label: "不健康です",
       },]);
     } else if (event.target.value === "subOption1") {
       setOutput("生活費の何が高いですか？");
