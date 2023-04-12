@@ -47,11 +47,11 @@ function ChatBot() {
       setOutput("なぜ元気が出ませんか？");
       setOptions([{
         value: "subOption5",
-        label: "精神的に不安です",
+        label: "精神的に弱ってます",
       },
       {
         value: "subOption6",
-        label: "不健康です",
+        label: "身体が不健康です",
       },]);
     } else if (event.target.value === "subOption1") {
       setOutput("生活費の何が高いですか？");
@@ -92,7 +92,6 @@ function ChatBot() {
             {option.label}
           </button>
         ))}
-        <Hoge />
       </div>
     </div>
   );
