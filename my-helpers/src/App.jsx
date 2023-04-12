@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import { Hoge } from "./Hoge";
 
 function ChatBot() {
   const [input, setInput] = useState("");
@@ -91,6 +92,7 @@ function ChatBot() {
             {option.label}
           </button>
         ))}
+        <Hoge />
       </div>
     </div>
   );
